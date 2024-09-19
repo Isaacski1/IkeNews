@@ -1,0 +1,298 @@
+@media (max-width: 800px) {
+  
+  /* ************ First Header Section Start *********** */
+  .first__header-box .box-1 .bar {
+    display: none;
+  }
+
+  .first__header-box .box-1 a {
+    display: none;
+  }
+
+  .first__header-box .box-2 i {
+    display: none;
+  }
+
+  .box-2 {
+    display: none;
+  }
+
+  .log_in {
+    display: block !important;
+  }
+
+  .first__header-box .log_in i {
+    margin: 0 10px;
+    font-size: 2rem;
+    color: var(--white-color);
+    cursor: pointer;
+  }
+
+  .first__header-box .log_in i:hover {
+    color: var(--cover-bg);
+  }
+
+  .logo-1 a {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+
+  /* ************ First Header Section End *********** */
+
+  /* Hero Section Start */
+  .hero-container-1 .content-date {
+    column-gap: 0.5rem;
+  }
+
+  .hero-container-1 .content-date a {
+    font-size: 1.3rem;
+    padding: 7px;
+  }
+
+  .hero-container-1 .content-headline {
+    font-size: 2rem;
+  }
+
+  
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  /* Hero Box 2 */
+  .box-1 .content-date {
+    column-gap: 0.5rem;
+  }
+
+  .box-1 .content-date a {
+    font-size: 1rem;
+  }
+
+  .box-1 .content-date #date {
+    font-size: 1.2rem;
+  }
+
+  .box-1 .content-headline {
+    font-size: 1.1rem;
+  }
+
+  /* Hero Section End */
+
+  /* Category Section Start */
+  .latest-news {
+    padding-top: 10px !important;
+  }
+  /* Category Section End */
+
+  /* Contact Section Start */
+  .contact-main {
+    padding-top: 10px !important;
+  }
+  /* Contact Section End */
+
+  /* Feature News Section Start */
+  .feature-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .blog-post {
+  padding-top: 1rem;
+}
+
+  .blog-post-header h1 {
+    font-size: 2rem;
+  }
+
+  .blog-post-header p {
+    font-size: 2rem;
+  }
+
+  /* Feature News Section End */
+  /* Single News Section Start */
+  .trending-news-header h1 {
+    font-size: 1.5rem;
+  }
+  .trending-news-info p {
+    font-size: 1.7rem;
+  }
+
+  /* Leave a Message Start */
+  .form-box input {
+    font-size: 2rem;
+  }
+  .msg-btn {
+    font-size: 1.6rem;
+    padding: 8px 25px;
+  }
+  #submit-error {
+    font-size: 1.5rem;
+  }
+  
+  /* Leave a Message End */
+
+  @keyframes slider-2 {
+  from {
+    margin-right: -300%;
+  }
+  to {
+    margin-left: -420%;
+  }
+}
+
+  /* Single News Section End */
+
+  /* Contact Section Start */
+  .contact-main-container-1__heading h1 {
+    font-size: 2rem;
+  }
+  .contact-info h1 {
+    font-size: 2rem;
+  }
+  .contact-info p {
+    font-size: 1.5rem;
+  }
+  .contact-box h2 {
+    font-size: 2rem;
+  }
+  .contact-box h2 i {
+    font-size: 2.5rem;
+  }
+  form .form-box input, textarea {
+    font-size: 2rem !important;
+  }
+  .submit-btn {
+    font-size: 1.5rem;
+    padding: 10px 30px;
+  }
+  .error-message {
+    font-size: 1.5rem;
+  }
+  #submit-error {
+    font-size: 1.5rem;
+  }
+  .wrong, .correct {
+    font-size: 2rem;
+  }
+  /* Contact Section End */
+
+  /* Login section start */
+  #title {
+    font-size: 3rem;
+  }
+  #sub-title {
+    font-size: 2.5rem;
+  }
+  .form form label {
+    font-size: 2.5rem;
+  }
+  .form form input {
+    font-size: 2rem;
+  }
+  .form-text {
+    font-size: 1.5rem !important;
+  }
+  .btn {
+    padding: 8px 20px !important;
+    font-size: 1.8rem !important;
+  }
+  .login-with  h3 {
+    font-size: 2rem;
+  }
+  .login-with .box li a i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 2rem;
+  }
+  .create-account {
+    margin-top: 1.5rem;
+  }
+  .forgot-password {
+    font-size: 1.5rem;
+  }
+  .sign-up {
+    font-size: 1.5rem;
+  }
+  /* Login section End */
+
+  /* SignUp Section Start */
+  .signup-container {
+    width: 100% !important;
+    margin: auto !important;
+  }
+  .welcome-text {
+    font-size: 3rem;
+  }
+  .sub-welcome-text {
+    font-size: 2.3rem;
+  }
+
+  .form__container {
+    width: 90% !important;
+  }
+
+  .signup-box form .input-cont {
+    width: 90%;
+    margin: auto;
+  }
+  .signup-box form .input-cont input {
+    font-size: 2rem;
+  }
+  .btn-1 {
+    font-size: 1.7rem !important;
+    padding: 8px 20px !important;
+    margin: initial;
+    width: auto;
+  }
+
+  .error-message {
+    font-size: 1.2rem;
+  }
+
+  #submit-error {
+    display: none !important;
+    font-size: 1.5rem;
+    bottom: 45px;
+  }
+  
+  /* SignUp Section End */
+}
+
+@media (max-width: 1200px) {
+  .box-1-content .content-headline-1 {
+    font-size: 1.8rem;
+  }
+
+  .heading-1__param p {
+    font-size: 1.5rem !important;
+  }
+
+   @keyframes slider-2 {
+  from {
+    margin-right: -300%;
+  }
+  to {
+    margin-left: -470%;
+  }
+}
+}
+
+@media (min-width: 1024px) {
+  /* Slider-1 */
+@keyframes slider-2 {
+  from {
+    margin-right: -300%;
+  }
+  to {
+    margin-left: -300%;
+  }
+}
+
+/* Categories Section Start */
+
+/* Categories Section End */
+}

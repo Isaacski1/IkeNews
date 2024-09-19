@@ -1,0 +1,451 @@
+/* Primary Elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.4s linear;
+}
+
+html {
+  font-size: 56.5%;
+}
+
+body {
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  background: var(--body-color) !important;
+  position: relative;
+}
+
+:root {
+  --dark-bg: #000;
+  --light-dark-bg: #2c2c2c;
+  --cover-bg: #ffcc00;
+  --hover-bg: #ffaa00;
+  --white-color: #fff;
+  --white-color-2: #efefef;
+  --normal-color: #ddd;
+  --gray-color: rgb(157, 155, 155);
+  --body-color: #e7e7e7;
+  --font-weight__normal: normal;
+  --font-weight__bold: 500;
+  --font-weight__bolder: 600;
+  --font-weight__super-bolder: 700;
+  --box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
+}
+
+span {
+  color: var(--cover-bg);
+  font-weight: var(--font-weight__bolder);
+}
+
+::selection {
+  background: var(--cover-bg);
+  color: var(--light-dark-bg);
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cover-bg);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--font-weight__normal);
+}
+
+p {
+  font-size: 1.3rem;
+  font-weight: var(--font-weight__bold);
+}
+
+a {
+  text-decoration: none !important;
+  display: block;
+}
+
+li {
+  list-style: none !important;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-flex-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px !important;
+}
+
+/* ============================ First Navigation Header Start ============================== */
+.first__header {
+  width: 100% !important;
+  height: auto !important;
+  background: var(--light-dark-bg);
+  border-bottom: 1px solid #888;
+}
+
+.first__header-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px !important;
+}
+
+/* ============ Box 1 Start ========= */
+.first__header-box .box-1 {
+  color: var(--gray-color);
+  column-gap: 1rem;
+  align-items: normal !important;
+}
+
+.first__header-box .box-1 .day {
+  font-size: 1.8rem;
+  font-weight: var(--font-weight__normal);
+}
+
+.first__header-box .box-1 .bar {
+  width: 1.4px;
+  height: 30px;
+  background: var(--gray-color);
+}
+
+.first__header-box .box-1 a {
+  font-size: 1.8rem;
+  color: var(--gray-color);
+}
+
+.first__header-box .box-1 a:hover {
+  color: var(--normal-color);
+}
+
+/* ============ Box 1 Start ========= */
+
+/* ============ Box 2 Start ============= */
+
+.first__header-box .box-2 i {
+  margin: 0 10px;
+  font-size: 2rem;
+  color: var(--gray-color);
+  cursor: pointer;
+}
+
+.first__header-box .box-2 i:hover {
+  color: var(--normal-color);
+}
+
+.log_in {
+  display: none !important;
+}
+
+/* ============ Box 2 End ============= */
+
+/* ============================ First Navigation Header End ============================== */
+
+/* ============================ Second Navigation Header Start ============================= */
+.second__header {
+  width: 95% !important;
+  height: auto;
+  padding: 20px !important;
+}
+
+.logo a {
+  font-size: 6vw;
+  font-weight: var(--font-weight__normal);
+  color: var(--light-dark-bg);
+}
+
+.logo-1 a {
+  font-size: 2rem;
+  font-weight: var(--font-weight__normal);
+  color: var(--white-color);
+  display: none;
+}
+
+/* Welcome News Start */
+.welcome-news {
+  background: var(--dark-bg);
+  overflow: hidden;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.welcome-news p {
+  font-size: 6vw;
+  color: var(--white-color);
+  animation: welcome-news 20s linear infinite running;
+}
+
+/* Welcome News End */
+
+/* ============================ Second Navigation Header End ============================= */
+
+/* ============================ Third Navigation Header Start ============================= */
+.third__header {
+  height: auto !important;
+  background: var(--light-dark-bg);
+  padding: 10px 5% !important;
+  width: 100% !important;
+  border: 1px solid #fff;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.nav-link.active {
+  background: var(--cover-bg) !important;
+  color: var(--dark-bg) !important;
+}
+
+.nav-link {
+  font-size: 1.9rem !important;
+  color: var(--white-color) !important;
+  font-weight: var(--font-weight__bolder) !important;
+  display: block !important;
+  padding: 10px 20px !important;
+  border-bottom: 1px solid var(--light-dark-bg) !important;
+}
+
+.nav-link:hover {
+  background: var(--cover-bg) !important;
+  color: var(--dark-bg) !important;
+}
+
+.search__box {
+  /* width: 400px !important; */
+  height: 40px !important;
+}
+
+.search__box .form-control {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 0 !important;
+  font-size: 2rem !important;
+  color: var(--light-dark-bg) !important;
+}
+
+::placeholder {
+  font-size: 2.2rem;
+  color: var(--light-dark-bg) !important;
+}
+
+.search-btn {
+  padding: 13px !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: var(--cover-bg) !important;
+}
+
+.search-btn i {
+  font-size: 2.2rem !important;
+  color: var(--dark-bg) !important;
+}
+
+.search-btn:hover {
+  background: var(--hover-bg) !important;
+}
+
+.navbar-toggler {
+  background: #fff !important;
+  float: right !important;
+}
+
+/* Hamburger */
+.navbar-toggler {
+  background: transparent !important;
+}
+
+.hamburger {
+  font-size: 3rem !important;
+  color: var(--white-color);
+}
+
+/* ============================ Third Navigation Header End ============================= */
+
+/* =============== Sign Up Main Start =================== */
+.signup-container {
+    margin-top: 50px !important;
+}
+
+.welcome-text {
+    font-size: 5rem;
+    font-weight: var(--font-weight__super-bolder);
+    color: var(--light-dark-bg);
+}
+
+.welcome-text span {
+    color: var(--hover-bg);
+}
+
+.sub-welcome-text {
+    font-size: 3rem;
+    font-weight: var(--font-weight__bolder);
+    color: var(--dark-bg);
+}
+
+.form__container {
+    padding-top: 60px !important;
+    width: 80% !important;
+    margin: auto !important;
+}
+
+.signup-box {
+    background: var(--white-color);
+    border-radius: 10px;
+}
+
+.signup-box form .input-cont {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.signup-box form .input-cont label {
+    font-size: 3rem;
+    font-weight: var(--font-weight__bolder);
+    color: var(--gray-color);
+}
+
+.signup-box form .input-cont input {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight__bolder);
+    color: var(--light-dark-bg);
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid var(--gray-color);
+}
+
+.btn-1 {
+  font-size: 2rem !important;
+  font-weight: var(--font-weight__bolder) !important;
+  color: var(--light-dark-bg) !important;
+  background: var(--hover-bg) !important;
+  padding: 10px 40px !important;
+  border-radius: 5px !important;
+  outline: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  width: 200px;
+  margin: auto;
+}
+
+.btn-1:hover {
+  background: var(--cover-bg) !important;
+}
+
+.error-message {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: var(--font-weight__bolder);
+  color: rgb(182, 6, 6);
+}
+
+#submit-error {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-size: 2rem;
+  font-weight: var(--font-weight__bolder);
+  color: rgb(182, 6, 6);
+}
+
+.wrong {
+  font-size: 3rem;
+  color: rgb(221, 21, 21);
+}
+.correct {
+  font-size: 3rem;
+  color: rgb(5, 190, 5);
+}
+
+.signup-with h1 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: var(--light-dark-bg);
+}
+
+.signup-with .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.signup-with .box li a i {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  background: var(--dark-bg);
+  color: var(--white-color);
+  cursor: pointer;
+  font-size: 2.5rem;
+  transition: .2s;
+}
+
+.signup-with .box li a i:hover {
+  transform: translateY(-8px);
+  background: var(--hover-bg);
+  color: var(--light-dark-bg);
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.login #login-text {
+  font-size: 2rem;
+  font-weight: var(--font-weight__bolder);
+  color: var(--dark-bg);
+}
+
+.login a {
+  font-size: 2.1rem !important;
+  font: var(--font-weight__bolder);
+  color: var(--hover-bg);
+}
+
+.login a:hover {
+  color: var(--light-dark-bg);
+  text-decoration: underline !important;
+}
+/* =============== Sign Up Main End =================== */
+
+/* ==================== Copyright Section Start ==================== */
+.copyright {
+  width: 100%;
+  margin: 60px auto 0px;
+  padding-top: 2rem;
+  background: var(--dark-bg);
+  text-align: center;
+}
+.copyright .box p {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--white-color-2);
+  font-weight: var(--font-weight__normal);
+}
+/* ==================== Copyright Section End ==================== */

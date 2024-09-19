@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HTML, CSS, JavaScript, personal website, blog website, Isaacski, Isaacski1, 
+  Isaacski Krams, Simple Website, HTML and CSS website, website templates, easy website">
+    <meta name="keywords" content="personal blog website">
+    <meta name="author" content="Isaacski Krams">
+    <title>Ike~News | Isaacski Template</title>
+    <!-- Fav-Icon -->
+    <link rel="shortcut icon" href="images/fav-icon.jfif" type="image/x-icon" />
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="./CSS/signup.css" />
+    <!-- Responsive CDN -->
+    <link rel="stylesheet" href="./CSS/responsive.css" />
+    <!-- Animation Style Sheet -->
+    <link rel="stylesheet" href="./CSS/animation.css" />
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Box Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Owl Carousel CDN -->
+    <link rel="stylesheet" href="./CSS/Libraries/owl.carousel.min.css">
+    <link rel="stylesheet" href="./CSS/Libraries/owl.theme.default.css">
+
+    <!-- CSS Boostrap CDN -->
+    <link rel="stylesheet" href="./CSS/Libraries/bootstrap.css">
+
+    <!-- Boostrap Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <!-- ================================ Third Navigation Header Start ================================ -->
+    <section class="container-fluid third__header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="logo-1">
+                    <a href="index.html"><span>IKE</span>NEWS</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list hamburger"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="categoriy.html">CATEGORY</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">SINGLE NEWS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+
+                    </ul>
+                    </li>
+
+                    </ul>
+                    <form class="d-flex search__box" role="search">
+                        <input class="form-control ms-2" type="search" placeholder="Keyword" aria-label="Search">
+                        <button class="btn search-btn" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- ================================ Third Navigation Header End ================================ -->
+
+    <!-- ========================= Sign Up Section Start ======================== -->
+    <section class="container-fluid signup-container">
+        <div class="row mb-5">
+            <div class="col-lg-12 welcome-text text-center">Welcome to Ike ~ <span>News</span> Website</div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-lg-12 sub-welcome-text text-center">Join our website with your credentials</div>
+        </div>
+
+        <div class="row form__container">
+            <div class="col-lg-12 signup-box p-3 border">
+                <form action="" class="p-3">
+                    <div class="row">
+                        <div class="col-lg-6 mb-3 input-cont position-relative">
+                            <label for="name">Full Name <span>*</span></label>
+                            <input type="text" name="fullName" id="contact-name" onkeyup="validateName()">
+                            <span id="name-error" class="error-message"></span>
+                        </div>
+
+                        <div class="col-lg-6 mb-3 input-cont position-relative">
+                            <label for="email">Email <span>*</span></label>
+                            <input type="email" name="email" id="contact-email" onkeyup="validateEmail()">
+                            <span id="email-error" class="error-message"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 mb-3 input-cont position-relative">
+                            <label for="user_name">Username <span>*</span></label>
+                            <input type="text" name="user_name" id="contact-userName" onkeyup="validateUserName()">
+                            <span id="user-name-error" class="error-message"></span>
+                        </div>
+
+                        <div class="col-lg-6 mb-3 input-cont position-relative">
+                            <label for="password">Password <span>*</span></label>
+                            <input type="password" name="password" id="contact-password" onkeyup="validatePassword()">
+                            <span id="password-error" class="error-message"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 input-cont mt-5  position-relative">
+                            <button class="btn-1" id="contact-submit" onclick="return validateSubmit()">Create
+                                Now</button>
+                            <span id="submit-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-lg-12 text-center signup-with">
+                            <h1>Or signup with</h1>
+                            <div class="box mt-5">
+                                <li><a href="" type="submit" title="Login with Gmail"><i class='bx bxl-google'></i></a>
+                                </li>
+                                <li><a href="" type="submit" title="Login with Facebook"><i
+                                            class='bx bxl-facebook'></i></a>
+                                </li>
+                                <li><a href="" type="submit" title="Login with Tiktok"><i class='bx bxl-tiktok'></i></a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-lg-12 login">
+                            <span id="login-text">Already having account?</span>
+                            <a href="login.html">Login</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ========================= Sign Up Section End ======================== -->
+
+    <!-- ======================== Copyright Section Start ========================= -->
+    <div class="container-fluid copyright">
+        <div class="row">
+            <div class="col-lg-12 box">
+                <p>2024 &copy; All Rights Reserved. Design by ❤ <span>Isaacski Krams</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- ======================== Copyright Section End ========================= -->
+    <!-- JavaScript Link -->
+    <script src="./JS/script.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="./JS/Libraries/bootstrap.bundle.js"></script>
+
+    <!--Jquery -->
+    <script src="./JS/Libraries/jquery.js"></script>
+    <!-- Owl Carousel -->
+
+    <script src="./JS/Libraries/owl.carousel.min.js"></script>
+
+    <script>
+        $("document").ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                dots: true,
+                nav: false,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    },
+                    1430: {
+                        items: 4
+                    },
+
+                },
+            });
+        })
+    </script>
+</body>
+
+</html

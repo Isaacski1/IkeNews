@@ -1,0 +1,23 @@
+@keyframes welcome-news {
+  30% {
+    color: #fff;
+  }
+
+  50% {
+    color: #ffcc00;
+  }
+
+  0% {
+    color: #0ff;
+  }
+
+  from {
+    margin-right: -360%;
+  }
+
+  to {
+    margin-left: -370%;
+  }
+}
+
+
